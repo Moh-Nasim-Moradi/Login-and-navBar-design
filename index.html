@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NAVBAR DESIGN</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="main-menue"><i class="fa fa-home" aria-hidden="true"></i><a href="#">HOME</a></li>
+            <li class="main-menue"><i class="fa fa-user" aria-hidden="true"></i><a href="#">ABOUT US</a></li>
+            <li class="main-menue"><i class="fa fa-clone" aria-hidden="true"></i><a href="#">SERVICES</a>
+                <div class="dropDown-menue">
+                    <ul>
+                        <li class="hover-me"><a href="#">WEB DESIGNING</a>
+                            <div class="inner-menue">
+                                <ul>
+                                    <li><a href="#">RESPONSIVER WEB DESIGN</a></li>
+                                    <li><a href="#">USER INTERFACE DESIGN</a></li>
+                                    <li><a href="#">USER EXPERIANCE DESIGN</a></li>
+                                    <li><a href="#">GRAPHIC DESIGN</a></li>
+                                    <li><a href="#">E-COMMERCE DESIGN</a></li>
+                                    <li><a href="#">TYPOGRAPHY DESIGN</a></li>
+                                    <li><a href="#">BRANDING & LOGO DESIGN</a></li>
+                                    <li><a href="#">SINGLE PAGE DESIGN</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="#">MOBILE APPLICATIONS</a>
+                            <div class="inner-menue">
+                                <ul>
+                                    <li><a href="#">SOCIAL MEDIA APPS</a></li>
+                                    <li><a href="#">E-COMMERCE APPS</a></li>
+                                    <li><a href="#">UTILITY APPS</a></li>
+                                    <li><a href="#">PRODUCTIVITY APPS</a></li>
+                                    <li><a href="#">ENTERTAINMENT APPS</a></li>
+                                    <li><a href="#">NEWS AND MAGAZINE APPS</a></li>
+                                    <li><a href="#">HEALTH AND FITNESS APPS</a></li>
+                                    <li><a href="#">EDUCATIONAL APPS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">NET WORKING</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="main-menue"><i class="fa fa-wpforms" aria-hidden="true"></i><a href="#">BLOG</a></li>
+            <li class="main-menue"><i class="fa fa-television" aria-hidden="true"></i><a href="#">TECHNOLOGY</a>
+                <div class="dropDown-menue">
+                    <ul>
+                        <li><a href="#">TESTING</a> </li>
+                        <li><a href="#">UI DESIGNING</a></li>
+                        <li><a href="#">DEVELOPMENT</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li class="main-menue"><i class="fa fa-phone" aria-hidden="true"></i><a href="#">CONTACT</a></li>
+            <li class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i><a href="#">Logout</a></li>
+        </ul>
+
+    </div>
+
+    <div class="image-box">
+        <img class="web-design" src="images/web-design.png" alt="">
+        <img class="profile" src="images/nasim.png" alt="">
+    </div>
+
+    <script>
+        const logout=document.querySelector('.logout');
+        logout.addEventListener('click', function(){
+            window.location.href='login.html';
+        })
+    </script>
+</body>
+
+</html>

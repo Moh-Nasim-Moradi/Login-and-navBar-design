@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login-Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form" action="#">
+            <input type="text" id="user-name" placeholder="name" required autocomplete="off">
+            <input type="password" id="user-password" placeholder="password" required autocomplete="off"> <br>
+            <button type="submit" id="submitBtn">Login</button><br>
+            <a href="#">Dont have account?</a>
+
+
+        </form>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginForm = document.getElementById('login-form');
+            loginForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const userName = document.getElementById('user-name').value;
+                const userPassword = document.getElementById('user-password').value;
+                if (userName === "admin" && userPassword === "moradi") {
+                    alert('login successfully');
+                    window.location.href='index.html';
+                }
+                else {
+                    alert('login failed, please check your credentials!');
+                }
+            })
+
+        })
+
+
+    </script>
+</body>
+
+</html>
